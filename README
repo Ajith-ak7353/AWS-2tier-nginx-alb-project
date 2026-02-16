@@ -1,0 +1,200 @@
+AWS High Availability Web Application with ALB, Monitoring & Automation
+project  Overview
+
+This project demonstrates the design and implementation of a Highly Available, Automated, and Monitored Web Application Infrastructure on AWS Cloud.
+
+The architecture ensures:
+
+High Availability across multiple Availability Zones
+
+Load-balanced traffic distribution
+
+Automated monitoring & alerting
+
+Scheduled cost optimization
+
+Serverless automation using AWS Lambda
+
+Centralized monitoring dashboard
+
+This project simulates a production-grade DevOps deployment environment.
+
+🏗 Architecture Overview
+
+Architecture Components:
+
+Custom VPC (CIDR: 10.0.0.0/22)
+
+2 Public Subnets (Different Availability Zones)
+
+2 EC2 Instances (Nginx installed)
+
+Application Load Balancer (ALB)
+
+Target Group
+
+CloudWatch Alarms
+
+AWS Lambda (Automation)
+
+EventBridge (Scheduling)
+
+SNS (Email Notifications)
+
+S3 Bucket (Application Storage)
+
+CloudWatch Dashboard
+
+🔧 Technologies Used
+
+AWS EC2
+
+AWS VPC
+
+Application Load Balancer (ALB)
+
+AWS CloudWatch
+
+AWS Lambda
+
+Amazon EventBridge
+
+Amazon SNS
+
+Amazon S3
+
+Nginx
+
+Linux (Ubuntu)
+
+🛠 Implementation Details
+1️⃣ Network Setup
+
+Created a custom VPC with CIDR block 10.0.0.0/22
+
+Created 2 public subnets in different Availability Zones
+
+Attached Internet Gateway
+
+Configured Route Tables
+
+Configured Security Groups for HTTP & SSH access
+
+2️⃣ EC2 Deployment
+
+Launched 2 EC2 instances in different Availability Zones
+
+Installed Nginx on both instances
+
+Deployed two different web applications:
+
+VM1 → Web App 1
+
+VM2 → Web App 2
+
+Verified application accessibility via public IP
+
+3️⃣ Application Load Balancer (ALB)
+
+Created ALB to distribute incoming traffic
+
+Created Target Group
+
+Registered both EC2 instances
+
+Configured Health Checks
+
+Verified round-robin traffic distribution
+
+4️⃣ Monitoring & Alerting
+
+Created CloudWatch alarm:
+
+Trigger condition: CPU Utilization > 70%
+
+Configured SNS Topic for email notifications
+
+Subscribed email to SNS topic
+
+Verified alert delivery
+
+5️⃣ Automation Using Lambda
+
+Developed Lambda functions to:
+
+Automatically stop EC2 instance when CPU exceeds threshold
+
+Send notification upon instance state change
+
+Start/Stop instances programmatically
+
+This ensures:
+
+Protection against overload
+
+Controlled infrastructure behavior
+
+6️⃣ Scheduled Cost Optimization
+
+Used Amazon EventBridge to:
+
+Start EC2 instances at 9:00 AM
+
+Stop EC2 instances at 5:00 PM
+
+Send notification on start/stop
+
+This simulates office-hour infrastructure usage to reduce cost.
+
+7️⃣ CloudWatch Dashboard
+
+Created a custom CloudWatch dashboard to monitor:
+
+CPU Utilization
+
+Instance Status
+
+Alarm State
+
+Provides centralized visibility for infrastructure health.
+
+8️⃣ S3 Integration
+
+Stored web application files in S3 bucket
+
+Used S3 as centralized storage
+
+Ensured proper IAM permissions
+
+📊 Key DevOps Concepts Demonstrated
+
+High Availability Architecture
+
+Load Balancing
+
+Infrastructure Monitoring
+
+Alerting & Notifications
+
+
+Scheduled Infrastructure Management
+
+Observability
+
+
+IAM roles for EC2 & Lambda
+
+Principle of Least Privilege
+
+
+📈 Outcome
+✔ Achieved highly available architecture
+✔ Implemented automated monitoring & alerting
+✔ Reduced operational cost using scheduling
+✔ Enabled centralized observability
+✔ Built production-like DevOps environment
+
+👨‍💻 Author
+
+Ajith Kumar
+Aspiring DevOps EngineerHTTPS with ACM
