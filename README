@@ -1,5 +1,5 @@
-AWS High Availability Web Application with ALB, Monitoring & Automation
-project  Overview
+🚀 AWS High Availability Web Application with ALB, Monitoring & Automation
+📌 Project Overview
 
 This project demonstrates the design and implementation of a Highly Available, Automated, and Monitored Web Application Infrastructure on AWS Cloud.
 
@@ -176,18 +176,28 @@ Infrastructure Monitoring
 
 Alerting & Notifications
 
+Serverless Automation
 
 Scheduled Infrastructure Management
 
+Cost Optimization
+
 Observability
 
+Cloud Networking
+
+🔐 Security Considerations
+
+Restricted Security Group rules
 
 IAM roles for EC2 & Lambda
 
 Principle of Least Privilege
 
+Health checks for instance validation
 
 📈 Outcome
+
 ✔ Achieved highly available architecture
 ✔ Implemented automated monitoring & alerting
 ✔ Reduced operational cost using scheduling
@@ -197,4 +207,4 @@ Principle of Least Privilege
 👨‍💻 Author
 
 Ajith Kumar
-Aspiring DevOps EngineerHTTPS with ACM
+Aspiring DevOps Engineer
